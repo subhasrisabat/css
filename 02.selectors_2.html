@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<body>
+    <style>
+        /*group selector */
+        p,h2{
+            color: brown;
+        }
+        /*child selector*/
+        div > span{
+            color: tomato;
+        }
+
+        /*descendent selector*/
+        div span{
+            color: red;
+         }
+
+         div{
+            height: 200px;
+            width:200px;
+            border:1px solid;
+
+            /*background cyan;*/
+         }
+         /*span{
+            display:inline-block;
+         }*/
+
+         /*adjacent sibling selectors*/
+         p +h2{
+            color: yellow;
+         }
+
+         /*general sibling selectors */
+         p~h2{
+            color :orange;
+
+         }
+         div [data-name ='subha']{
+            background:pink;
+
+         }
+         div [dir ='subha']{
+            background:rgb(78,2,15);
+
+         }
+          </style>
+            <P>this is paragraph
+            <p> outer paragraph 
+                <p>inner paragraph </p>
+         
+            </p>
+            <h2> this is h2 element</h2>
+            <h2> this is h2_2 element</h2>
+
+            <div> this is div element(block)</div>
+            <span> this is span element(inline)</span>
+            <div data-name = "subha">this have attr</div>
+            <div dir = "subha"> this have attr</div>
+
+            </div>
+                  this have attr
+                <span> i am a span inside div </span>
+                <span> i am a span2 inside div </span>
+
+            </div>
+
+  </body>  
+</html>
